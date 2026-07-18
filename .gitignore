@@ -1,0 +1,30 @@
+# Compilaciones .NET
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# MAUI / Android
+*.apk
+*.aab
+*.keystore
+*.jks
+artifacts/
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Configuración local sensible
+appsettings.Development.json

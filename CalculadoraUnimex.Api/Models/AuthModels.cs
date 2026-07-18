@@ -1,0 +1,1 @@
+namespace CalculadoraUnimex.Api.Models;public sealed record LoginRequest(string Correo,string Password);public sealed record RegisterRequest(string Nombre,string Correo,string Password,string ConfirmarPassword);public sealed record ApiResult(bool Success,string Message);

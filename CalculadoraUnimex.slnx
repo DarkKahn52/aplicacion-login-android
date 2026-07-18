@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CalculadoraUnimex.App/CalculadoraUnimex.App.csproj" />
+  <Project Path="CalculadoraUnimex.Api/CalculadoraUnimex.Api.csproj" />
+</Solution>

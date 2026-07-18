@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="CalculadoraUnimex.App.MainPage"
+ xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ BackgroundColor="{StaticResource Navy900}">
+ <Grid>
+  <Grid.Background><RadialGradientBrush Center="0.5,0.1" Radius="0.9"><GradientStop Color="#1976D2" Offset="0"/><GradientStop Color="#0A3D91" Offset="0.45"/><GradientStop Color="#03152F" Offset="1"/></RadialGradientBrush></Grid.Background>
+  <ScrollView><VerticalStackLayout Padding="28" Spacing="22" VerticalOptions="Center">
+   <Border Style="{StaticResource GlassCard}">
+    <VerticalStackLayout Spacing="18">
+     <Image Source="logo.png" HeightRequest="120" WidthRequest="120" Aspect="AspectFit"/>
+     <Label Text="Calculadora UNIMEX" Style="{StaticResource Title}" HorizontalTextAlignment="Center"/>
+     <Label Text="Bienvenido, ingresa para consultar tu herramienta de estudio" Style="{StaticResource Subtitle}" HorizontalTextAlignment="Center"/>
+     <Entry x:Name="EmailEntry" Placeholder="Correo electrónico" Keyboard="Email" Style="{StaticResource NeonEntry}"/>
+     <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" Style="{StaticResource NeonEntry}"/>
+     <Button x:Name="LoginButton" Text="Entrar" Style="{StaticResource PrimaryButton}" Clicked="OnLoginClicked"/>
+     <ActivityIndicator x:Name="Loading" IsVisible="False" IsRunning="False" Color="#00E5FF"/>
+     <Label x:Name="MessageLabel" TextColor="#FF8A80" HorizontalTextAlignment="Center" IsVisible="False"/>
+     <HorizontalStackLayout HorizontalOptions="Center" Spacing="5"><Label Text="¿No tienes cuenta?" TextColor="#D9ECFF"/><Label Text="Regístrate aquí" TextColor="#90CAF9" FontAttributes="Bold"><Label.GestureRecognizers><TapGestureRecognizer Tapped="OnRegisterTapped"/></Label.GestureRecognizers></Label></HorizontalStackLayout>
+    </VerticalStackLayout>
+   </Border>
+  </VerticalStackLayout></ScrollView>
+ </Grid>
+</ContentPage>
